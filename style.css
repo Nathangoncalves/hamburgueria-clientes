@@ -1,0 +1,84 @@
+:root {
+    --cor-fundo: #f8f8f8;
+    --cor-texto: #333;
+    --cor-branco: #ffffff;
+    --cor-principal: #ff4d00;
+    --cor-hover: #e64400;
+    --cor-borda: #ccc;
+    --sombra-leve: 0 0 10px rgba(0, 0, 0, 0.05);
+    --padding: 2rem;
+    --radius: 12px;
+    --fonte-principal: Arial, sans-sarif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    background-color: var(--cor-branco);
+    padding: var(--padding);
+    border-radius: var(--radius);
+    box-shadow: var(--sombra-leve);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2 ease;
+}
+
+button:hover {
+    background-color: var(--cor-hover);
+}
+
+#lista-clientes {
+    margin-top: 2rem;
+    background-color: var(--cor-branco);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--sombra-leve);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
